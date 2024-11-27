@@ -1,0 +1,62 @@
+/* Contenedor principal */
+.main-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Para alinear los botones en una fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 15px; /* Espaciado entre los botones */
+    margin: 20px 0;
+}
+
+/* Enlaces como botones */
+nav ul li {
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+
+nav ul li a {
+    display: inline-block; /* Asegura que los botones se comporten como bloques en línea */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de bienvenida */
+#welcome-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Operaciones</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="table-container">
+        <h2>Tabla de Operaciones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>OPERACIÓN</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>BOTONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TOTAL PRODUCTO</td>
+                    <td>Ingresar el precio y la cantidad para calcular el total</td>
+                    <td>
+                        <button onclick="calcularTotalProducto()">Calcular</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PORCENTAJE</td>
+                    <td>Ingresar el precio y calcular el 30% del precio</td>
+                    <td>
+                        <button onclick="calcularPorcentaje()">Calcular</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DESCUENTO</td>
+                    <td>Ingresar el precio y la cantidad para calcular el 25% de descuento</td>
+                    <td>
+                        <button onclick="calcularDescuento()">Calcular</button>
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+    <p></p>
+    <div class="back-button">
+        <button onclick="window.location.href='formulario.html'">Volver al Formulario</button>
+    </div>
+    <div class="back-button">
+        <button onclick="window.location.href='pagin.html'">Ir a la Pagina Principal</button>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="formulario.js"></script>
+</body>
+</html>
